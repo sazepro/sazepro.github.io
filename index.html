@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Design Portfolio - [Your Name]</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Language Switcher -->
+    <div class="lang-switch">
+        <button onclick="switchLang('en')" id="en-btn" class="active">EN</button>
+        <button onclick="switchLang('fa')" id="fa-btn">FA</button>
+    </div>
+
+    <header>
+        <h1 data-en="Structural Design Portfolio" data-fa="پورتفولیو طراحی سازه">Structural Design Portfolio</h1>
+        <p data-en="Civil Engineer | Structural Designer | Tehran, Iran" data-fa="مهندس عمران | طراح سازه | تهران، ایران">
+            Civil Engineer | Structural Designer | Tehran, Iran
+        </p>
+    </header>
+
+    <section class="projects">
+        <!-- Project 1 -->
+        <div class="project">
+            <img src="project1.jpg" alt="5-Story Residential Building">
+            <h3 data-en="5-Story Residential Building" data-fa="ساختمان مسکونی ۵ طبقه">5-Story Residential Building</h3>
+            <p data-en="ETABS design of beams, columns, and foundation. Seismic analysis included. (2024)" 
+               data-fa="طراحی تیر، ستون و فونداسیون با ETABS. تحلیل لرزه‌ای. (۱۴۰۳)">
+               ETABS design of beams, columns, and foundation. Seismic analysis included. (2024)
+            </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <img src="project2.jpg" alt="Pedestrian Bridge">
+            <h3 data-en="Pedestrian Bridge" data-fa="پل عابر پیاده">Pedestrian Bridge</h3>
+            <p data-en="SAP2000 load analysis and steel connections. Successfully built in Tehran." 
+               data-fa="تحلیل بار و اتصالات فولادی با SAP2000. اجرا شده در تهران.">
+               SAP2000 load analysis and steel connections. Successfully built in Tehran.
+            </p>
+        </div>
+
+        <!-- Add more projects like this -->
+    </section>
+
+    <footer>
+        <p data-en="Contact: your.email@gmail.com | LinkedIn: linkedin.com/in/yourprofile" 
+           data-fa="تماس: your.email@gmail.com | لینکدین: linkedin.com/in/yourprofile">
+            Contact: your.email@gmail.com | LinkedIn: linkedin.com/in/yourprofile
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
