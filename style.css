@@ -1,0 +1,31 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f8f9fa; color: #333; padding: 20px; transition: all 0.3s; }
+
+.lang-switch {
+    position: fixed; top: 20px; right: 20px; z-index: 1000;
+}
+.lang-switch button {
+    padding: 8px 12px; margin: 0 5px; border: none; background: #007bff; color: white;
+    cursor: pointer; border-radius: 5px; font-weight: bold;
+}
+.lang-switch button.active { background: #0056b3; }
+
+header { text-align: center; padding: 60px 20px 40px; background: #007bff; color: white; border-radius: 10px; margin-bottom: 30px; }
+header h1 { font-size: 2.2em; margin-bottom: 10px; }
+header p { font-size: 1.1em; }
+
+.projects { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.project {
+    background: white; width: 320px; border-radius: 12px; overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s;
+}
+.project:hover { transform: translateY(-5px); }
+.project img { width: 100%; height: 200px; object-fit: cover; }
+.project h3 { padding: 15px 15px 5px; color: #007bff; font-size: 1.2em; }
+.project p { padding: 0 15px 15px; font-size: 0.95em; line-height: 1.5; color: #555; }
+
+footer { text-align: center; margin: 50px 0 20px; color: #666; font-size: 0.9em; }
+
+/* RTL for Persian */
+html[lang="fa"] { direction: rtl; text-align: right; }
+html[lang="fa"] .lang-switch { right: auto; left: 20px; }
